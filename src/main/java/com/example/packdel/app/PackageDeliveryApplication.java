@@ -20,6 +20,8 @@ public class PackageDeliveryApplication {
 
 
     public void start() {
+        System.out.println("WELCOME IN PACKAGE DELIVERY APP:");
+        System.out.println("-------------------------------------------------");
         // first preload data
         if (preloadReader != null) {
             preloadReader.read();
@@ -31,6 +33,8 @@ public class PackageDeliveryApplication {
         mainReader.read();
         //when main reader is interrupted shutdown emitter thread
         outputEmitter.shutdown();
+        System.out.println("-------------------------------------------------");
+        System.out.println("APP EXITING GOOD BYE!!!");
     }
 
 }
