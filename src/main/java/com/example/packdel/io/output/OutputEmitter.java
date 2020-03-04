@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class OutputEmitter {
 
-    private static final Integer POOL_SIZE = 5;
+    private static final Integer POOL_SIZE = 1;
     private static final Integer INITIAL_DELAY = 30;
 
     private final PackageStorage packageStorage;
