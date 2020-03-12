@@ -33,6 +33,7 @@ public class OutputEmitter {
 
 
     public void shutdown(){
+        outputWriter.close();
         executorService.shutdownNow();
     }
 
